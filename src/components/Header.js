@@ -1,8 +1,8 @@
 import React from "react";
-import { graphql } from 'gatsby';
 
-    const Header = ({data}) => {
-console.log(data);
+
+    const Header = () => {
+
 return (
     <header id="header">
            
@@ -11,15 +11,3 @@ return (
 };
 
 export default Header;
-export const query = graphql`
-query {
-    allWpPost{
-      edges{
-        node{
-            title
-        }
-      }
-    }
-  }
-  
-  `

@@ -3,7 +3,8 @@ import { graphql } from 'gatsby'
 import './style.css';
 import Header from "../components/Header";
 import Card from "../components/Card";
-
+import Glider from "../components/Glider";
+import Test from "../components/Glider";
 const IndexPage = ({data}) => {
 console.log(data);
 
@@ -13,6 +14,7 @@ console.log(data);
 <Header />
 <div className="background__overlay">
 <div className="container">
+  <Test />
     <Card content={data.wpTestimonial.content} name={data.allWpPost.edges[0].node.title} />
  </div>
   </div>
