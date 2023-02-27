@@ -4,12 +4,13 @@
 module.exports = {
   siteMetadata: {
     title: `My Gatsby Site`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `http://gatsbypractice.local/`,
+    description: 'This is where I write my thoughts',
   },
   plugins: [{
     resolve: 'gatsby-source-wordpress',
     options: {
-      "url": " https://gatsbypractice.local/graphql"
+      "url": " http://gatsbypractice.local/graphql"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"]
 };
