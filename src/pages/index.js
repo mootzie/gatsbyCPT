@@ -6,26 +6,15 @@ import Card from "../components/Card";
 
 const IndexPage = ({data}) => {
 console.log(data);
-// let dataAttr = [];
-//  for (let i = 0; i< data.allWpPost.edges.length; i++){
-//   dataAttr[i] = data.allWpPost.edges[i];
-// }
 
 
   return (
     <>
 <Header />
 <div className="background__overlay">
-  
 <div className="container">
-  <div className="titles">
-    {data.allWpPost.edges[0].node.title + " "}
-    {data.wpTestimonial.content};
-    {data.wpTestimonial.title};
-    <Card name={data.allWpPost.edges[0].node.title} />
-    <br></br>
-    </div>
-  </div>
+    <Card content={data.wpTestimonial.content} name={data.allWpPost.edges[0].node.title} />
+ </div>
   </div>
   </>
 )}
