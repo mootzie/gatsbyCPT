@@ -12,6 +12,9 @@ const Card = (props) => {
         <div className="card__content">
             <p>{props.content}</p>
         </div>
+        <div className="card__author">
+            <strong>{props.author}</strong>
+        </div>
     </div>
 
     )
